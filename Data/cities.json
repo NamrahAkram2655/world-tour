@@ -1,0 +1,52 @@
+{
+  "cities": [
+    {
+      "id": "1721685796452",
+      "cityName": "Middle",
+      "country": "Unknown country",
+      "emoji": "🌹",
+      "date": "2024-07-05",
+      "notes": "dfgh",
+      "position": {
+        "lat": 54.12509596981357,
+        "lng": -4.536679865414267
+      }
+    },
+    {
+      "id": "1721854104741",
+      "cityName": "Melbourne",
+      "country": "Unknown country",
+      "emoji": "⛳",
+      "date": "2024-07-20",
+      "notes": "wow",
+      "position": {
+        "lat": 52.84325623771379,
+        "lng": -0.9346030940238049
+      }
+    },
+    {
+      "id": "1721855031878",
+      "cityName": "Jersey",
+      "country": "Unknown country",
+      "emoji": "⛳",
+      "date": "2024-07-10",
+      "notes": "vbn",
+      "position": {
+        "lat": 48.99486331587622,
+        "lng": -2.1004172589309356
+      }
+    },
+    {
+      "id": "1721856430852",
+      "cityName": "Bristol Channel",
+      "country": "Unknown country",
+      "emoji": "⛳",
+      "date": "2024-07-10",
+      "notes": "vbn",
+      "position": {
+        "lat": 51.31694587563074,
+        "lng": -3.6157058314047457
+      }
+    }
+  ]
+}

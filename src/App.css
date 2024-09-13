@@ -1,0 +1,601 @@
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* app nav */
+#navbar ul {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+#navbar .list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+#navbar .list a {
+    color: black;
+    font-size: 18px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#navbar {
+    background: rgba(207, 205, 205, 0.7);
+}
+
+#login {
+    background-color: rgb(36, 187, 36);
+    height: 4vh;
+
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+#logo {
+    height: 6vh;
+    font-weight: bold;
+
+}
+
+/* home */
+.home {
+    height: 100vh;
+    background: url('/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    margin: 4rem 0 0 0;
+}
+
+.homepage h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 13px 0;
+}
+
+.homepage h2 {
+    padding: 0 37px;
+    margin: 3rem 0;
+    padding: 0 9rem;
+    font-size: 20px;
+}
+
+#home-btn {
+    padding: 10px 14px;
+    font-size: 18px;
+    background-color: rgb(4, 158, 4);
+    border: none;
+}
+
+#home-btn:hover {
+    cursor: pointer;
+    background-color: rgb(40, 197, 66);
+}
+
+#home-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* home complete */
+
+/* product */
+
+.product {
+    height: 100vh;
+    background-color: rgb(31, 49, 49);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    padding: 0 16rem;
+}
+
+#product-img {
+    margin: 0 18px;
+    height: 50vh;
+}
+
+.data h2 {
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.data p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* product pricing end */
+
+/* login */
+.login {
+    height: 100vh;
+    background-color: rgb(31, 49, 49);
+}
+
+
+.login-form {
+    background-color: #333;
+    /* Dark background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    color: #fff;
+    /* Text color */
+    opacity: 0.9;
+    /* Adjust opacity as needed */
+    margin: 10% auto;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+    /* Label text color */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: white;
+    /* Input background color */
+    border: none;
+    border-radius: 4px;
+    color: black;
+    /* Input text color */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* login */
+
+/* sidebar */
+.layout {
+    height: 100vh;
+    background-color: rgb(44, 65, 65);
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+}
+
+.sidebar {
+    text-align: center;
+    width: 40vw;
+    background-color: rgb(31, 49, 49);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    color: white;
+    padding: 20px 0;
+    overflow: scroll;
+}
+
+/* sidebar */
+
+/* App Layout */
+
+.nested-route ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 50px 0 0 0;
+}
+
+.nested-route ul li {
+    list-style: none;
+}
+
+.nested-route li a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(75, 71, 71);
+    border: none;
+    padding: 10px 12px;
+    border: 1px solid rgb(87, 84, 84);
+    border-radius: 4px;
+}
+
+.nested-route li a:hover {
+    background-color: #363434;
+}
+
+.nested-route li .active {
+    background-color: #363434;
+}
+
+.layout .logo a {
+    position: absolute;
+    top: 10px;
+    padding: 20px;
+}
+
+/*  */
+/* City List */
+
+.cityList {
+    margin: 30px 0 0 0;
+}
+
+.cityItem {
+    text-decoration: none;
+}
+
+.cityText {
+    text-decoration: none;
+}
+
+/* City List */
+/* city Item */
+
+.cityItem {
+    display: flex;
+    justify-content: center;
+}
+
+.cityItemActive {
+    border: 1px solid green;
+}
+
+.cityItem ul {
+    margin: 17px 0 0 0;
+    height: 5vh;
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(40, 65, 66);
+}
+
+.cityItem ul li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+.date {
+    display: flex;
+    gap: 5px;
+}
+
+#cross:hover {
+    cursor: pointer;
+}
+
+.error-message {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    color: red;
+    align-items: center;
+}
+
+/* countryitems */
+.countryList {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 50%;
+}
+
+.countries {
+    background-color: rgb(40, 65, 66);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    /* width: 20%; */
+}
+
+/* country item */
+
+/* form */
+.login-htmlForm {
+    width: 69%;
+    margin: 1.5rem auto;
+    border: 1px solid rgb(44, 73, 73);
+    text-align: left;
+}
+
+.login-htmlForm h2 {
+    text-align: center;
+}
+
+.htmlForm-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.htmlForm-group {
+    margin: 10px 15px;
+}
+
+.htmlForm-group textarea {
+    height: 18vh;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.htmlForm-group input {
+    width: 20vw;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.buttons button {
+    background-color: rgb(59, 106, 107);
+    color: white;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    background: #000000;
+}
+
+/* form */
+
+/* current CIty */
+
+.currentCity {
+    width: 69%;
+    margin: 1.5rem auto;
+    border: 1px solid rgb(44, 73, 73);
+    text-align: left;
+    padding: 10px;
+}
+
+.currentCity .data {
+    margin: 12px 0 0 0;
+    font-size: 15px;
+    color: gray;
+    font-style: italic;
+}
+
+.curCity {
+    margin: 8px 0 0 0;
+    font-size: 21px;
+}
+
+.curCityLink {
+    margin: 8px 0 0 0;
+    text-decoration: none;
+}
+
+/* Current City */
+
+/* Map */
+
+.mapContainer {
+    height: 100%;
+    width: 55vw;
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#locbtn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #20af6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Make sure the button is above the map */
+}
+
+.locbtn:hover {
+    background-color: #0056b3;
+}
+
+/* Map */
+
+/* user */
+.user {
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #43574e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    right: 0;
+}
+
+.user img {
+    border-radius: 100px;
+    height: 4rem;
+}
+
+.user button {
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* user */
+
+/* Loader spinner */
+
+.lds-roller {
+    /* change color here */
+    color: #1c4c5b
+  }
+  .lds-roller,
+  .lds-roller div,
+  .lds-roller div:after {
+    box-sizing: border-box;
+  }
+  .lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 5.2px;
+    height: 5.2px;
+    border-radius: 50%;
+    background: currentColor;
+    margin: -3.6px 0 0 -3.6px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 62.62742px;
+    left: 62.62742px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 67.71281px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 70.90963px;
+    left: 48.28221px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 70.90963px;
+    left: 31.71779px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 67.71281px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 62.62742px;
+    left: 17.37258px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12.28719px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .load{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* spinner loader */
